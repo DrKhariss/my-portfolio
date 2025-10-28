@@ -12,8 +12,8 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "About Me",
+    link: "#aboutMe",
   },
 ];
 
@@ -39,55 +39,59 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/exp1.png", //AIESEC
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/exp2.png", //Genesys
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/exp4.png", //Upskill
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/exp3.webp", //Tech Solutions
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/exp1.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/exp2.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/exp4.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/exp3.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/exp1.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/exp2.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/exp4.png",
   },
+  {
+    imgPath: "/images/logos/exp3.webp",
+  },
+  
 ];
 
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Fluid Interface Animations",
+    desc: "I am quite good in using Framer Motion and GSAP to create smooth animations (I actually used GSAP for this website). My aim is to enhance user experience without overwhelming them.",
   },
   {
     imgPath: "/images/chat.png",
     title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    desc: "I meet deadlines one cup of coffee at a time. My communication style is clear and transparent throughout the project lifecycle. I try to build trust with my team members and team leads.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Independent & Efficient",
+    desc: "I can work with little or no supervision — although I might come back to communicate when something seems unclear. Just show me where we're headed, and I’ll handle the details, giving my team steady updates, and the occasional good meme.",
   },
 ];
 
@@ -116,31 +120,25 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
+    name: "JavaScript",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "ThreeJS",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Project Management",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -149,39 +147,52 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    review: "Another contract role, but one of the key things I learned from this role is the importance of collaboration between frontend and backend teams. I was able to work with backend developers in API integration, which made me understand better how frontend and backend systems interact.",
+    imgPath: "/images/logos/exp3.webp",
+    logoPath: "/images/logos/logo3.jpeg",
     title: "Frontend Developer",
-    date: "January 2023 - Present",
+    date: "April 2025 - June 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Built and deployed client-facing dashboards using React.js and TailwindCSS and Shadcn UI.",
+      "Collaborated with backend teams to integrate GraphQL APIs, which allowed for faster data fetching.",
+      "Implemented end-to-end testing (Cypress, Jest)",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review: "This role was where I really put React to good use. It was a short contract role but I worked on some large-scale React applications, that focused on performance optimization and UI. I had to learn to write clean, modular code that is easy to understand and maintain because I had to work with other developers. This was also a nice work environment.",
+    imgPath: "/images/logos/exp1.png",
+    logoPath: "/images/logos/logo2.png",
+    title: "Frontend Developer",
+    date: "August 2024 - January 2025",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed and optimized React.js applications, improving frontend performance by 15%.",
+      "Integrated RESTful & GraphQL APIs, that optimized data retrieval and authentication flows (OAuth).",
+      "Ensured cross-browser and cross-device compatibility using responsive web design principles.",
+      "Participated in sprint stand-ups and team meetings, to ensure efficient development cycles.",  
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    review: "This was also a trainig role, but I solidified my skills in React. I was able to work on more complex projects with other developers that required a deeper understanding of React concepts like state management, hooks and so on. This role opened me up to the possibilities in Web Development",
+    imgPath: "/images/logos/exp2.png",
+    logoPath: "/images/logos/logo1.png",
+    title: "Frontend Developer",
+    date: "January 2024 - October 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Developed interactive and responsive UI components using React.js and Tailwind CSS.",
+      "Debugged and tested APIs using Jest, improving system reliability.",
+      "Worked with a cross-functional team to align frontend implementation with business requirements.",
+    ],
+  },
+  {
+    review: "This was my first role as a frontend developer. I learned the basics of frontend development - HTML, CSS, and JavaScript, created my first webpage, button, list items and so on. This was an onsite role, and I had to sit through weekly meetings where I couldn't understand most of what they were saying.",
+    imgPath: "/images/logos/exp4.png",
+    logoPath: "/images/logos/logo4.png",
+    title: "Frontend Intern",
+    date: "September 2022 - August 2023",
+    responsibilities: [
+      "Developed UI components using HTML, CSS and Javascript.",
+      "Collaborated with team members on group projects requirements and deliver solutions.",
+      "Participated in code reviews and team meetings to enhance learning.",
     ],
   },
 ];
@@ -201,67 +212,59 @@ const expLogos = [
   },
 ];
 
-const testimonials = [
+const aboutMe = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+    heading: "Kharis Nkemena",
+    id: "0",
+    imgPath: "/images/kharis.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+    heading: "Who is Kharis?",
+    id: "1",
+    text:
+      "I am a Frontend Web Developer - incase that wasn't obvious by now :), and I just love things that work. So, I create beautiful, functional, and user-friendly websites. I turn complex problems into simpler problems (because simpler problems are much easier to solve) and my tool for solving problems is Web Development",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+    heading: "My Motivation",
+    id: "2",
+    text:
+      "I picked up coding during the lockdown. It was slow and a bit boring until I created my first 'Hello World' page. I realized that web development is more than just coding; it's about creating experiences that everyday people interact with, it's reproducing an idea in your head into what anyone can interact with. This realization fueled my passion and commitment to mastering web development",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+    heading: "How I Work",
+    id: "3",
+    text:
+      "I can really focus on a task when working alone, I think it's easier for me to manage myself that way. I enjoy working in teams too, especially with the occasional Slack banter. I believe that the best solutions come from different minds that think together, ideas flowing freely. I am always eager to learn from others and share what I know. This is one of the reasons I feel working with a team has an advantage",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+    heading: "Where I am Headed",
+    id: "4",
+    text:
+      "Right now, I’m just focused on building real-world projects that challenge my creativity and expand my skills. I like to be the best (or one of the bests) in what I do, I want to grow into a frontend engineer who designs experiences enjoy using",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+    heading: "Some other stuff About Me",
+    id: "5",
+    text:
+      "I may be one of the most boring people you'll meet. Asides from my facination with AI and working in Healthcare, I enjoy reading, listening to podcasts, and going for long walks just to think. I write too when I feel like it, but mostly about the things I think about",
   },
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
     name: "x",
+    url: "https://x.com/kharis_sss",
     imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
+    url: "https://www.linkedin.com/in/kharis-nkemena/",
     imgPath: "/images/linkedin.png",
+  },
+  {
+    name: "Github",
+    url: "https://github.com/DrKhariss?tab=repositories",
+    imgPath: "/images/github.png",
   },
 ];
 
@@ -272,7 +275,7 @@ export {
   counterItems,
   expCards,
   expLogos,
-  testimonials,
+  aboutMe,
   socialImgs,
   techStackIcons,
   techStackImgs,

@@ -1,7 +1,7 @@
 import Buttons from "../components/Buttons";
-import AnimatedCounter from "../components/HeroModels/AnimatedCounter";
+import AnimatedCounter from "../components/AnimatedCounter";
 import HeroExperience from "../components/HeroModels/HeroExperience";
-import { words } from "../Constants";
+import { words } from "../Constants/index.js";
 import { useGSAP} from "@gsap/react";
 import gsap from "gsap";
 
@@ -47,7 +47,7 @@ const hero = () => {
             <h1>that Deliver Results</h1>
           </div>
           
-          <p className="text-white-50 md:text-xl relative z-10 pointer-events-none"> Hello, I'm Kharis, a web developer based in Nigeria</p>
+          <p className="text-white-50 md:text-xl relative z-10 pointer-events-none"> Hello, I'm Kharis. A web developer based in Nigeria</p>
           <Buttons
           className="md:w-80 md:h-16 w-60 h-12"
           id="button"

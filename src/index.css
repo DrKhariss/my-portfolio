@@ -8,7 +8,6 @@
 html,
 body {
   width: 100dvw;
-  height: 100vh;
   overflow-x: hidden;
   background-color: black;
   color: white;
@@ -272,7 +271,7 @@ section {
   }
 
   .tech-grid {
-    @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+    @apply grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-20 md:gap-10 gap-5 mt-16;
   }
 
   .tech-icon-wrapper {
@@ -299,18 +298,14 @@ section {
   }
 
   .footer {
-    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
+    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-10 xl:px-30 flex items-center justify-center;
 
     .footer-container {
-      @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
-    }
-
-    p {
-      @apply text-center md:text-start cursor-pointer;
+      @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0 w-full;
     }
 
     .socials {
-      @apply flex items-center justify-center gap-5;
+      @apply flex items-center justify-center md:justify-start gap-5;
 
       .icon {
         @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
@@ -348,7 +343,6 @@ section {
   80%  { transform: translateY(-80%); }
   90%  { transform: translateY(-90%); }
 }
-
 /* Hero Text slider ends */
 
 .gradient-line {
@@ -436,8 +430,7 @@ section {
       white,
       #ffffff00 100deg
     );
-  /* mask-composite removed for compatibility */
-  -webkit-mask-clip: padding-box, border-box;
+  mask-composite: intersect;
   mask-clip: padding-box, border-box;
   opacity: 0;
   transition: 0.5s ease;
